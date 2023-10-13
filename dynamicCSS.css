@@ -1,0 +1,12 @@
+:root{
+    --userbox-color: white;
+    --passbox-color: white;
+}
+
+.userBox{
+    background-color: var(--userbox-color, orange);
+}
+
+.passBox{
+    background-color: var(--passbox-color, orange);
+}
