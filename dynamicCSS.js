@@ -3,19 +3,31 @@ function Check(){
     const pass = document.getElementById("passBox").value;
     console.log(user);
     console.log(pass);
-    if(user == "testuser"){
-        if(pass == "mypassword"){
-            console.log("success");
+    if(user != "testuser"){
+        console.log("wrong username.");
+        if(user.indexOf(" ") != -1){
+            document.documentElement.style.setProperty('--userbox-color', 'lightyellow');
         }
         else{
-            console.log("failed. wrong password.");
+            document.documentElement.style.setProperty('--userbox-color', 'pink');
+        }
+    }
+    else{
+        document.documentElement.style.setProperty('--userbox-color', 'white');
+    }
+    if(pass != "mypassword"){
+        console.log("wrong password.");
+        if(pass.indexOf(" ") != -1){
+            document.documentElement.style.setProperty('--passbox-color', 'lightyellow');    
+        }
+        else{
             document.documentElement.style.setProperty('--passbox-color', 'pink');
         }
     }
     else{
-        console.log("failed. wrong username.");
-        document.documentElement.style.setProperty('--userbox-color', 'pink');
+        document.documentElement.style.setProperty('--passbox-color', 'white');    
     }
+
 }
 
 function Cancel(){
