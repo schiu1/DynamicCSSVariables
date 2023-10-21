@@ -64,6 +64,8 @@ function Check(){
     
 }
 
+//NEED TO CENSOR PASSWORD INPUT
+
 function UsernameCheck(){
     const correct = "testuser";
     const current = document.getElementById("userBox").value;
