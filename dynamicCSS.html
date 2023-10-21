@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="userDiv">
-        <input type="text" class="userBox" id="userBox" placeholder="User ID">
+        <input type="text" class="userBox" id="userBox" oninput="UsernameCheck()" placeholder="User ID">
     </div>
     <div class="passDiv">
-        <input type="text" class="passBox" id="passBox" placeholder="Password">
+        <input type="text" class="passBox" id="passBox" oninput="PasswordCheck()" placeholder="Password">
     </div>
     <div>
         <button id="loginButton" onclick="Check()">Login</button>

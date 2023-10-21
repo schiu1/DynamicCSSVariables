@@ -1,14 +1,20 @@
 :root{
     --userbox-color: white;
     --passbox-color: white;
+    --user-border-color: black;
+    --pass-border-color: black;
 }
 
 .userBox{
     background-color: var(--userbox-color, orange);
+    border-color: var(--user-border-color, blue);
+    outline: none;
 }
 
 .passBox{
     background-color: var(--passbox-color, orange);
+    border-color: var(--pass-border-color, blue);
+    outline: none;
 }
 
 .userErrorMsg, .passErrorMsg, .userWarningMsg, .passWarningMsg{

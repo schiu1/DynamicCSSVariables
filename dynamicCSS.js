@@ -64,6 +64,30 @@ function Check(){
     
 }
 
+function UsernameCheck(){
+    const correct = "testuser";
+    const current = document.getElementById("userBox").value;
+    for(let i = 0; i < current.length; i++){
+        if(current.charAt(i) != correct.charAt(i)){
+            document.documentElement.style.setProperty('--user-border-color', 'red');
+            return;
+        }
+    }
+    document.documentElement.style.setProperty('--user-border-color', 'black');
+}
+
+function PasswordCheck(){
+    const correct = "mypassword";
+    const current = document.getElementById("passBox").value;
+    for(let i = 0; i < current.length; i++){
+        if(current.charAt(i) != correct.charAt(i)){
+            document.documentElement.style.setProperty('--pass-border-color', 'red');
+            return;
+        }
+    }
+    document.documentElement.style.setProperty('--pass-border-color', 'black');
+}
+
 function Cancel(){
     document.documentElement.style.setProperty('--userbox-color', 'white');
     document.documentElement.style.setProperty('--passbox-color', 'white');
